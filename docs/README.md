@@ -1,4 +1,4 @@
-# gulp-replace-task [![Build Status](https://secure.travis-ci.org/outaTiME/gulp-replace-task.png?branch=master&cb=_)](http://travis-ci.org/outaTiME/gulp-replace-task)
+# gulp-replace-task [![Build Status](https://secure.travis-ci.org/outaTiME/gulp-replace-task.png?branch=master)](http://travis-ci.org/outaTiME/gulp-replace-task)
 
 > Replace text patterns using [pattern-replace](https://github.com/outaTiME/pattern-replace).
 

@@ -13,7 +13,7 @@
 
 var assert = require('assert');
 var gutil = require('gulp-util');
-var replace = require('./index');
+var replace = require('../index');
 
 // test
 

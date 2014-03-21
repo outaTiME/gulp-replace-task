@@ -20,7 +20,7 @@ Assuming installation via NPM, you can use `gulp-replace-task` in your gulpfile 
 var gulp = require('gulp');
 var replace = require('gulp-replace-task');
 
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/index.html')
     .pipe(replace({
       patterns: [
@@ -57,10 +57,10 @@ NETWORK:
 *
 ```
 
-gulpfile:
+Gulpfile:
 
 ```js
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/manifest.appcache')
     .pipe(replace({
       patterns: [
@@ -113,11 +113,11 @@ File `src/humans.txt`:
 
 ```
 
-gulpfile:
+Gulpfile:
 
 ```js
 var pkg = require('./package.json');
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src(['src/manifest.appcache', 'src/humans.txt'])
     .pipe(replace({
       patterns: [
@@ -146,10 +146,10 @@ File `src/index.html`:
 </head>
 ```
 
-gulpfile:
+Gulpfile:
 
 ```js
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/index.html')
     .pipe(replace({
       patterns: [
@@ -173,11 +173,11 @@ File `src/index.html`:
 </body>
 ```
 
-gulpfile:
+Gulpfile:
 
 ```js
 var fs = require('fs');
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/index.html')
     .pipe(replace({
       patterns: [
@@ -199,10 +199,10 @@ File `src/username.txt`:
 John Smith
 ```
 
-gulpfile:
+Gulpfile:
 
 ```js
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/username.txt')
     .pipe(replace({
       patterns: [
@@ -220,10 +220,10 @@ gulp.task('default', function() {
 
 The `String` matching type or `expression` in `false` generates a simple variable lookup mechanism `@@string`, to skip this mode use one of the below rules ... make your choice:
 
-gulpfile:
+Gulpfile:
 
 ```js
-gulp.task('default', function() {
+gulp.task('default', function () {
   gulp.src('src/foo.txt')
 
     // option 1 (explicitly using an regexp)
@@ -264,6 +264,7 @@ gulp.task('default', function() {
 
 ## Release History
 
+ * 2014-03-21   v0.0.2   Readme updated and code cleanup.
  * 2014-03-20   v0.0.1   Initial version.
 
 ---

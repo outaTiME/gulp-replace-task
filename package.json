@@ -1,7 +1,7 @@
 {
   "name": "gulp-replace-task",
   "description": "Replace text patterns using pattern-replace.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://github.com/outaTiME/gulp-replace-task",
   "author": {
     "name": "outaTiME",

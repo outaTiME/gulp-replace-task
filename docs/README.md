@@ -1,6 +1,6 @@
 # gulp-replace-task [![Build Status](https://secure.travis-ci.org/outaTiME/gulp-replace-task.png?branch=master)](http://travis-ci.org/outaTiME/gulp-replace-task)
 
-> Replace text patterns using [pattern-replace](https://github.com/outaTiME/pattern-replace).
+> Replace text patterns with [applause](https://github.com/outaTiME/applause).
 
 
 
@@ -218,8 +218,6 @@ gulp.task('default', function () {
 
 #### Lookup for `foo` instead of `@@foo`
 
-The `String` matching type or `expression` in `false` generates a simple variable lookup mechanism `@@string`, to skip this mode use one of the below rules ... make your choice:
-
 Gulpfile:
 
 ```js
@@ -264,6 +262,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2014-03-22   v0.0.3   Modular core renamed to [applause](https://github.com/outaTiME/applause). Performance improvements. Expression flag removed. New pattern matching for CSON object. More test cases, readme updated and code cleanup.
  * 2014-03-21   v0.0.2   Readme updated and code cleanup.
  * 2014-03-20   v0.0.1   Initial version.
 

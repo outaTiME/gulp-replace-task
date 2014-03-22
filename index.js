@@ -13,7 +13,7 @@
 
 var through2 = require('through2');
 var gutil = require('gulp-util');
-var Replacer = require('pattern-replace');
+var Applause = require('applause');
 
 // constants
 
@@ -38,7 +38,8 @@ module.exports = function (opts) {
 
     var options = opts || {};
     var contents = file.contents.toString();
-    var result = new Replacer(options).replace(contents);
+    var applause = Applause.create(options);
+    var result = applause.replace(contents);
     if (result !== false) {
       file.contents = new Buffer(result);
     } else {

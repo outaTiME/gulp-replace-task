@@ -1,6 +1,6 @@
 # gulp-replace-task [![Build Status](https://secure.travis-ci.org/outaTiME/gulp-replace-task.png?branch=master)](http://travis-ci.org/outaTiME/gulp-replace-task)
 
-> Replace text patterns using [pattern-replace](https://github.com/outaTiME/pattern-replace).
+> Replace text patterns with [applause](https://github.com/outaTiME/applause).
 
 
 
@@ -48,15 +48,14 @@ Type: `String|RegExp`
 
 Indicates the matching expression.
 
-If matching type is `String` and `expression` attribute is `false` we use a simple variable lookup mechanism `@@string` (in any other case we use the default regexp replace logic):
+If matching type is `String` we use a simple variable lookup mechanism `@@string` (in any other case we use the default regexp replace logic):
 
 ```javascript
 {
   patterns: [
     {
       match: 'foo',
-      replacement: 'bar', // replaces "@@foo" to "bar"
-      expression: false   // simple variable lookup
+      replacement: 'bar'  // replaces "@@foo" to "bar"
     }
   ]
 }
@@ -135,7 +134,7 @@ Also supports nested objects:
 #### patterns.yaml
 Type: `String`
 
-If an attribute `yaml` found in pattern definition we flatten the object using `delimiter` concatenation and each key–value pair will be used for the replacement (simple variable lookup mechanism and no regexp support).
+If an attribute `yaml` found in pattern definition will be converted and then processed like [json attribute](#patternsjson).
 
 ```javascript
 {
@@ -147,13 +146,20 @@ If an attribute `yaml` found in pattern definition we flatten the object using `
 }
 ```
 
-#### patterns.expression
-Type: `Boolean`
-Default: `false`
+#### patterns.cson
+Type: `String`
 
-Indicates the type of matching.
+If an attribute `cson` found in pattern definition will be converted and then processed like [json attribute](#patternsjson).
 
-If detects regexp instance in `match` attribute, we assume to works with expression matcher (in any other case should be forced).
+```javascript
+{
+  patterns: [
+    {
+      cson: 'key: \'value\''
+    }
+  ]
+}
+```
 
 #### variables
 Type: `Object`
@@ -385,8 +391,6 @@ gulp.task('default', function () {
 
 #### Lookup for `foo` instead of `@@foo`
 
-The `String` matching type or `expression` in `false` generates a simple variable lookup mechanism `@@string`, to skip this mode use one of the below rules ... make your choice:
-
 Gulpfile:
 
 ```js
@@ -431,6 +435,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2014-03-22   v0.0.3   Modular core renamed to [applause](https://github.com/outaTiME/applause). Performance improvements. Expression flag removed. New pattern matching for CSON object. More test cases, readme updated and code cleanup.
  * 2014-03-21   v0.0.2   Readme updated and code cleanup.
  * 2014-03-20   v0.0.1   Initial version.
 

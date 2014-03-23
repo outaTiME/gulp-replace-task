@@ -435,6 +435,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2014-03-23   v0.0.4   Readme updated.
  * 2014-03-22   v0.0.3   Modular core renamed to [applause](https://github.com/outaTiME/applause). Performance improvements. Expression flag removed. New pattern matching for CSON object. More test cases, readme updated and code cleanup.
  * 2014-03-21   v0.0.2   Readme updated and code cleanup.
  * 2014-03-20   v0.0.1   Initial version.

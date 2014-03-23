@@ -1,7 +1,7 @@
 {
   "name": "gulp-replace-task",
   "description": "Replace text patterns with applause.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "http://github.com/outaTiME/gulp-replace-task",
   "author": {
     "name": "outaTiME",
@@ -30,7 +30,7 @@
   "dependencies": {
     "through2": "~0.4.1",
     "gulp-util": "~2.2.14",
-    "applause": "0.3.0"
+    "applause": "0.3.1"
   },
   "devDependencies": {
     "mocha": "*"

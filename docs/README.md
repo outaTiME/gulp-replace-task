@@ -262,6 +262,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2014-06-10   v0.0.6   Remove node v.8.0 support and third party dependencies updated.
  * 2014-04-20   v0.0.5   JSON / YAML / CSON as function supported. Readme updated (thanks [@milanlandaverde](https://github.com/milanlandaverde)).
  * 2014-03-23   v0.0.4   Readme updated.
  * 2014-03-22   v0.0.3   Modular core renamed to [applause](https://github.com/outaTiME/applause). Performance improvements. Expression flag removed. New pattern matching for CSON object. More test cases, readme updated and code cleanup.

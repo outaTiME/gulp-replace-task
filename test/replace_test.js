@@ -2,7 +2,7 @@
 /*
  * gulp-replace-task
  *
- * Copyright (c) 2014 outaTiME
+ * Copyright (c) 2015 outaTiME
  * Licensed under the MIT license.
  * https://github.com/outaTiME/gulp-replace-task/blob/master/LICENSE-MIT
  */

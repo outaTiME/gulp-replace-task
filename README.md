@@ -485,6 +485,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2015-05-07   v0.2.1   Fix regression issue with empty string in replacement.
  * 2015-05-01   v0.2.0   Update to [applause](https://github.com/outaTiME/applause) v0.4.0.
  * 2014-10-10   v0.1.0   Escape regexp when matching type is `String`.
  * 2014-06-10   v0.0.6   Remove node v.8.0 support and third party dependencies updated.

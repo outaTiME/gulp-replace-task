@@ -262,6 +262,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2015-08-06   v0.2.3   Fix issue with special characters attributes ($$, $&, $`, $', $n or $nn) on JSON, YAML and CSON.
  * 2015-05-07   v0.2.1   Fix regression issue with empty string in replacement.
  * 2015-05-01   v0.2.0   Update to [applause](https://github.com/outaTiME/applause) v0.4.0.
  * 2014-10-10   v0.1.0   Escape regexp when matching type is `String`.

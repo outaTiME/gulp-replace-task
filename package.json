@@ -1,25 +1,13 @@
 {
   "name": "gulp-replace-task",
   "description": "Replace text patterns with applause.",
-  "version": "0.2.3",
-  "homepage": "http://github.com/outaTiME/gulp-replace-task",
+  "version": "0.10.0",
   "author": {
     "name": "outaTiME",
     "url": "http://outa.im/"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/outaTiME/gulp-replace-task.git"
-  },
-  "bugs": {
-    "url": "http://github.com/outaTiME/gulp-replace-task/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/outaTiME/gulp-replace-task/blob/master/LICENSE-MIT"
-    }
-  ],
+  "repository": "outaTiME/gulp-replace-task",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -30,7 +18,7 @@
   "dependencies": {
     "through2": "^2.0.0",
     "gulp-util": "^3.0.0",
-    "applause": "0.4.3"
+    "applause": "1.0.3"
   },
   "devDependencies": {
     "mocha": "^2.2.0"
@@ -53,7 +41,6 @@
   ],
   "main": "index.js",
   "files": [
-    "index.js",
-    "LICENSE-MIT"
+    "index.js"
   ]
 }

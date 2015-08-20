@@ -1,8 +1,6 @@
-# gulp-replace-task [![Build Status](https://secure.travis-ci.org/outaTiME/gulp-replace-task.png?branch=master)](http://travis-ci.org/outaTiME/gulp-replace-task)
+# gulp-replace-task [![Build Status](https://travis-ci.org/outaTiME/gulp-replace-task.svg?branch=master)](https://travis-ci.org/outaTiME/gulp-replace-task) [![npm version](https://badge.fury.io/js/gulp-replace-task.svg)](http://badge.fury.io/js/gulp-replace-task)
 
 > Replace text patterns with [applause](https://github.com/outaTiME/applause).
-
-
 
 ## Install
 
@@ -262,6 +260,7 @@ gulp.task('default', function () {
 
 ## Release History
 
+ * 2015-08-19   v0.10.0   Last [applause](https://github.com/outaTiME/applause) integration and package.json update.
  * 2015-08-06   v0.2.3   Fix issue with special characters attributes ($$, $&, $`, $', $n or $nn) on JSON, YAML and CSON.
  * 2015-05-07   v0.2.1   Fix regression issue with empty string in replacement.
  * 2015-05-01   v0.2.0   Update to [applause](https://github.com/outaTiME/applause) v0.4.0.

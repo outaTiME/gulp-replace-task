@@ -1,4 +1,4 @@
-# gulp-replace-task [![Build Status](https://travis-ci.org/outaTiME/gulp-replace-task.svg?branch=master)](https://travis-ci.org/outaTiME/gulp-replace-task) [![npm version](https://badge.fury.io/js/gulp-replace-task.svg)](http://badge.fury.io/js/gulp-replace-task)
+# gulp-replace-task [![Build Status](https://img.shields.io/travis/outaTiME/gulp-replace-task.svg)](https://travis-ci.org/outaTiME/gulp-replace-task) [![NPM Version](https://img.shields.io/npm/v/gulp-replace-task.svg)](https://npmjs.org/package/gulp-replace-task)
 
 > Replace text patterns with [applause](https://github.com/outaTiME/applause).
 

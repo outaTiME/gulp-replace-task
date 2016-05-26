@@ -41,7 +41,7 @@ module.exports = function (opts) {
     var applause = Applause.create(options);
     var result = applause.replace(contents);
     if (result !== false) {
-      file.contents = new Buffer(result);
+      file.contents = new Buffer(result.content);
     } else {
       // preserve original file
     }

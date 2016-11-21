@@ -18,10 +18,10 @@
   "dependencies": {
     "through2": "^2.0.0",
     "gulp-util": "^3.0.0",
-    "applause": "1.1.0"
+    "applause": "1.2.2"
   },
   "devDependencies": {
-    "mocha": "^2.2.0"
+    "mocha": "^3.1.2"
   },
   "keywords": [
     "gulpplugin",

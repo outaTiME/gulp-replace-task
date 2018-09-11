@@ -12,7 +12,7 @@
 // dependencies
 
 var through2 = require('through2');
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var Applause = require('applause');
 
 // constants
@@ -31,7 +31,7 @@ module.exports = function (opts) {
     }
 
     if (file.isStream()) {
-      this.emit('error', new gutil.PluginError(PLUGIN_NAME,
+      this.emit('error', new PluginError(PLUGIN_NAME,
         'Streaming not supported'));
       return cb();
     }

@@ -243,7 +243,7 @@ gulp.task('default', function () {
         patterns: [
           {
             match: /(\w+)\s(\w+)/,
-            replacement: '$2, $1', // replaces "John Smith" with "Smith, John"
+            replacement: '$2, $1', // Replaces "John Smith" with "Smith, John"
           },
         ],
       })

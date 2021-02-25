@@ -1,28 +1,24 @@
 {
   "name": "gulp-replace-task",
+  "version": "2.0.0",
   "description": "Replace text patterns with applause.",
-  "version": "0.11.0",
+  "license": "MIT",
+  "repository": "outaTiME/gulp-replace-task",
   "author": {
     "name": "outaTiME",
-    "url": "http://outa.im/"
+    "email": "afalduto@gmail.com",
+    "url": "https://outa.im"
   },
-  "repository": "outaTiME/gulp-replace-task",
-  "license": "MIT",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">=10"
   },
   "scripts": {
-    "release": "scripts/release.sh",
-    "test": "mocha"
+    "test": "eslint . && ava",
+    "release": "release-it"
   },
-  "dependencies": {
-    "through2": "^2.0.0",
-    "gulp-util": "^3.0.0",
-    "applause": "1.1.0"
-  },
-  "devDependencies": {
-    "mocha": "^2.2.0"
-  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "gulpplugin",
     "replace",
@@ -37,10 +33,26 @@
     "json",
     "yaml",
     "cson",
-    "flatten"
+    "flatten",
+    "appaluse"
   ],
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ]
+  "dependencies": {
+    "applause": "^2.0.0",
+    "plugin-error": "^1.0.1",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-xo": "^0.35.0",
+    "eslint-config-xo-space": "^0.27.0",
+    "release-it": "^14.4.1",
+    "vinyl": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "xo-space"
+    ]
+  }
 }

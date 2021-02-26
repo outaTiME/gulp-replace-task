@@ -32,9 +32,9 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'foo',
-            replacement: 'bar',
-          },
-        ],
+            replacement: 'bar'
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -78,9 +78,9 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'timestamp',
-            replacement: new Date().getTime(),
-          },
-        ],
+            replacement: Date.now()
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -140,13 +140,13 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'version',
-            replacement: pkg.version,
+            replacement: pkg.version
           },
           {
             match: 'timestamp',
-            replacement: new Date().getTime(),
-          },
-        ],
+            replacement: Date.now()
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -178,9 +178,9 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'timestamp',
-            replacement: new Date().getTime(),
-          },
-        ],
+            replacement: Date.now()
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -212,9 +212,9 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'include',
-            replacement: fs.readFileSync('./includes/content.html', 'utf8'),
-          },
-        ],
+            replacement: fs.readFileSync('./includes/content.html', 'utf8')
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -243,9 +243,9 @@ gulp.task('default', function () {
         patterns: [
           {
             match: /(\w+)\s(\w+)/,
-            replacement: '$2, $1', // Replaces "John Smith" with "Smith, John"
-          },
-        ],
+            replacement: '$2, $1' // Replaces "John Smith" with "Smith, John"
+          }
+        ]
       })
     )
     .pipe(gulp.dest('build'));
@@ -267,10 +267,10 @@ gulp.task('default', function () {
       replace({
         patterns: [
           {
-            match: /foo/g,  // Explicitly using a regexp
-            replacement: 'bar',
-          },
-        ],
+            match: /foo/g, // Explicitly using a regexp
+            replacement: 'bar'
+          }
+        ]
       })
     )
     .pipe(
@@ -278,10 +278,10 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'foo',
-            replacement: 'bar',
-          },
+            replacement: 'bar'
+          }
         ],
-        usePrefix: false, // Using the option provided
+        usePrefix: false // Using the option provided
       })
     )
     .pipe(
@@ -289,10 +289,10 @@ gulp.task('default', function () {
         patterns: [
           {
             match: 'foo',
-            replacement: 'bar',
-          },
+            replacement: 'bar'
+          }
         ],
-        prefix: '',  // Removing the prefix manually
+        prefix: '' // Removing the prefix manually
       })
     )
     .pipe(gulp.dest('build'));

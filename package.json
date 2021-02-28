@@ -34,7 +34,7 @@
     "yaml",
     "cson",
     "flatten",
-    "appaluse"
+    "applause"
   ],
   "dependencies": {
     "applause": "^2.0.0",

@@ -19,10 +19,8 @@ module.exports = function (opts) {
     var options = opts || {};
     var contents = file.contents.toString();
     var applause = Applause.create(options);
-    var result = applause.replace(contents);
-    if (result) {
-      file.contents = Buffer.from(result.content);
-    }
+    var result = applause.replace(contents).content;
+    file.contents = Buffer.from(result === false ? contents : result);
 
     this.push(file);
     cb();

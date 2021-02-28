@@ -66,7 +66,7 @@ NETWORK:
 
 Gulpfile:
 
-```js
+```javascript
 var gulp = require('gulp');
 var replace = require('gulp-replace-task');
 
@@ -155,7 +155,7 @@ gulp.task('default', function () {
 
 ### Cache busting
 
-File `src/assets/index.html`:
+File `src/index.html`:
 
 ```html
 <head>
@@ -172,7 +172,7 @@ var replace = require('gulp-replace-task');
 
 gulp.task('default', function () {
   gulp
-    .src('src/assets/index.html')
+    .src('src/index.html')
     .pipe(
       replace({
         patterns: [
@@ -199,7 +199,7 @@ File `src/index.html`:
 
 Gulpfile:
 
-```js
+```javascript
 var gulp = require('gulp');
 var replace = require('gulp-replace-task');
 var fs = require('fs');
@@ -256,7 +256,7 @@ gulp.task('default', function () {
 
 Gulpfile:
 
-```js
+```javascript
 var gulp = require('gulp');
 var replace = require('gulp-replace-task');
 
